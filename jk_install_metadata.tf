@@ -1,6 +1,6 @@
 # Bootstrapping Script to install jenkins
 data "template_file" "jk-metadata" {
-  template = <<EOF
+template = <<EOF
 sudo yum update -y
 sudo hostnamectl set-hostname jenkins-server
 sudo yum -y install java-11-openjdk-devel
